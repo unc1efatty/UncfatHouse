@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>主页一</title>
+		<link rel="stylesheet" href="css/repeat.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/homepage.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="script/jquery-1.12.4.js"></script>
+		<script src="js/repeat.js"></script>
+		<script src="js/ImagePlugIns.js"></script>
+		<!--  -->
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+		<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+	</head>
+	<body>
+		<div class="fixedNav">
+			<div style="min-width:220px;">
+				<h1>layuiAdmin Pro</h1>
+				<div id="sign-F">
+					<ul class="navUl" style="width:220px;">
+						<li class="anitTwo">
+							<span class="iconfont icon-zhuye"></span>
+							<cite>主页</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li id = "webpage">
+								<kite>控制台</kite>
+							</li>
+							<li >
+								<kite>主页一</kite>
+							</li>
+							<li>
+								<kite>主页二</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-quanping"></span>
+							<cite>组件</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>栅格</kite>
+							</li>
+							<li>
+								<kite>按钮</kite>
+							</li>
+							<li>
+								<kite>表单</kite>
+							</li>
+							<li>
+								<kite>导航</kite>
+							</li>
+							<li>
+								<kite>选项卡</kite>
+							</li>
+							<li>
+								<kite>进度条</kite>
+							</li>
+							<li>
+								<kite>面板</kite>
+							</li>
+							<li>
+								<kite>徽章</kite>
+							</li>
+							<li>
+								<kite>时间线</kite>
+							</li>
+							<li>
+								<kite>动画</kite>
+							</li>
+							<li>
+								<kite>辅助</kite>
+							</li>
+							<li>
+								<kite>通用弹层</kite>
+							</li>
+							<li>
+								<kite>日期时间</kite>
+							</li>
+							<li>
+								<kite>表格</kite>
+							</li>
+							<li>
+								<kite>分页</kite>
+							</li>
+							<li>
+								<kite>上传</kite>
+							</li>
+							<li>
+								<kite>颜色选择器</kite>
+							</li>
+							<li>
+								<kite>滑块组件</kite>
+							</li>
+							<li>
+								<kite>评分</kite>
+							</li>
+							<li>
+								<kite>轮播</kite>
+							</li>
+							<li>
+								<kite>流加载</kite>
+							</li>
+							<li>
+								<kite>工具</kite>
+							</li>
+							<li>
+								<kite>代码修饰</kite>
+							</li>
+							<li>
+								<kite>即使聊天</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-biaoqian"></span>
+							<cite>页面</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>个人主页</kite>
+							</li>
+							<li>
+								<kite>通讯录</kite>
+							</li>
+							<li>
+								<kite>客户列表</kite>
+							</li>
+							<li>
+								<kite>商品列表</kite>
+							</li>
+							<li>
+								<kite>留言板</kite>
+							</li>
+							<li>
+								<kite>搜索结果</kite>
+							</li>
+							<li>
+								<kite>注册</kite>
+							</li>
+							<li>
+								<kite>登入</kite>
+							</li>
+							<li>
+								<kite>忘记密码</kite>
+							</li>
+							<li>
+								<kite>404</kite>
+							</li>
+							<li>
+								<kite>错误提示</kite>
+							</li>
+							<li>
+								<kite>内嵌页面</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-wangluo"></span>
+							<cite>应用</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>内容系统</kite>
+							</li>
+							<li>
+								<kite>社区系统</kite>
+							</li>
+							<li>
+								<kite>消息中心</kite>
+							</li>
+							<li>
+								<kite>工单系统</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-zhinanzhen"></span>
+							<cite>高级</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>通讯系统</kite>
+							</li>
+							<li>
+								<kite>Echarts集成</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-survey"></span>
+							<cite>用户</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>网站用户</kite>
+							</li>
+							<li>
+								<kite>后台管理员</kite>
+							</li>
+							<li>
+								<kite>角色管理</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-shezhi"></span>
+							<cite>设置</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>系统设置</kite>
+							</li>
+							<li>
+								<kite>我的设置</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-template"></span>
+							<cite>授权</cite>
+						</li>
+						<span id="sign"></span>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="header">
+			<ul class="header-navUl sign-A">
+				<li>
+					<i class="iconfont icon-liebiaoshouqi"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-wangluo"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-shuaxin"></i>
+				</li>
+				<li>
+					<input type="text" placeholder="搜索...">
+				</li>
+				<span class="sign-a"></span>
+			</ul>
+			<ul class="header-navUl2 sign-A">
+				<li>
+					<i class="iconfont icon-lingdang"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-747bianjiqi_tuya"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-biaoqian"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-quanping"></i>
+				</li>
+				<li style="position:relative;">
+					<cite>贤心</cite>
+					<i></i>
+				</li>
+				<li>
+					<i class="iconfont icon-moreif"></i>
+				</li>
+				<span class="sign-a"></span>
+			</ul>
+		</div>
+
+		<div class="section">
+			<!-- 身体部分的主页header -->
+			<div class="nWeheader RptStyle repet-text">
+				<span>主页</span>
+				<span style="font-size:10px;color:rgb(153, 153, 153);">/</span>
+				<span>主页一</span>
+			</div>
+			<!-- 身体居中部分 -->
+			<div class="section-core" >
+				<!-- 左边 -->
+				<div class="centered-left">
+					<div class="centeredLeft-One RptStyle">
+						<div class="repet-text">最近更新
+							<span>全部更新</span>
+						</div>
+						<div class="repet-style">
+							<ul>
+								<li>
+									<div>
+										<p><i class="iconfont icon-747bianjiqi_tuya icont"></i><span>flow</span></p>
+										<p>修复开启isLazyimg:true后,图片懒加载但是图片不存在的报错问题</p>
+										<p>
+											<span>流加载</span><span>7天前</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p><i class="icon-lingdang iconfont"></i><span>upload</span></p>
+										<p>修复开启size参数后,文件超出规定大小时,提示信息有误</p>
+										<p>
+											<span>流加载</span><span>7天前</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p><i class="icon-user iconf iconfont"></i><span>form</span></p>
+										<p>增加form.val(filter,fields)方法,用于给指定表单集合的元</p>
+										<p>
+											<span>流加载</span><span>7天前</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p><i class="icon-user iconf iconfont"></i><span>form</span></p>
+										<p>增加form.val(filter,fields)方法,用于给指定表单集合的元</p>
+										<p>
+											<span>流加载</span><span>7天前</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p><i class="icon-user iconf iconfont"></i><span>form</span></p>
+										<p>增加form.val(filter,fields)方法,用于给指定表单集合的元</p>
+										<p>
+											<span>流加载</span><span>7天前</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<p><i class="icon-user iconf iconfont"></i><span>form</span></p>
+										<p>增加form.val(filter,fields)方法,用于给指定表单集合的元</p>
+										<p>
+											<span>流加载</span><span>7天前</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+				</div>
+
+				<div class="centeredLeft-Two RptStyle">
+					<div class="repet-text">动态</div>
+					<div class="repet-style">
+						<ul>
+							<li>
+								<div class="portrait"></div>
+								<div>
+									<p>胡歌 在 <a href="#">layuiadmin专区</a> 回答问题</p>
+									<p>几秒前</p>
+								</div>
+							</li>
+							<li>
+								<div class="portrait"></div>
+								<div>
+									<p>彭于晏 在 <a href="#">layuiadmin专区</a> 进行了<a href="#">提问</a></p>
+									<p>2天前</p>
+								</div>
+							</li>
+							<li>
+								<div class="portrait"></div>
+								<div>
+									<p>吴宇 将 <a href="#">layui</a> 更新至2.3.0-rc1版本</p>
+									<p>7天前</p>
+								</div>
+							</li>
+							<li>
+								<div class="portrait"></div>
+								<div>
+									<p>吴尊 在 <a href="#">Fly社区</a> 发布了<a href="#">建议</a></p>
+									<p>7天前</p>
+								</div>
+							</li>
+							<li>
+								<div class="portrait"></div>
+								<div>
+									<p>周杜杜 在 <a href="#">layuiadmin专区</a> 看小黄片</p>
+									<p>8天前</p>
+								</div>
+							</li>
+							<li>
+								<div class="portrait"></div>
+								<div>
+									<p>胡歌 在 <a href="#">layuiadmin专区</a> 回答问题</p>
+									<p>8天前</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- 右边 -->
+			<div class="centered-right">
+				<!-- 右边第一部分 -->
+				<div class="centeredRight-One RptStyle">
+					<div class="repet-text">快速开始/便捷导航</div>
+					<div class="repet-style" >
+						<ul>
+							<li><span>操作一</span></li>
+							<li><span>操作二</span></li>
+							<li><span>操作三</span></li>
+							<li><span>操作四</span></li>
+							<li><span>操作五</span></li>
+							<li><span>操作六</span></li>
+							<li class="Llast-li"><div><span>+</span>添加</div></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 右边第二部分 -->
+				<div class="centeredRight-Two RptStyle">
+					<div class="repet-text">八卦新闻</div>
+					<div class="repet-style" style="overflow: hidden;">
+						<div id="container" style="height:100%;"></div>
+					</div>
+				</div>
+				<!-- 右边第三部分 -->
+				<div class="centeredRight-Three RptStyle">
+					<div class="repet-text">重点组件</div>
+					<div class="repet-style">
+						<ul>
+							<li>
+								<div class="portrait"></div><p>数据表格</p>
+							</li>
+							<li>
+								<div class="portrait"></div><p>数据表格</p>
+							</li>
+							<li>
+								<div class="portrait"></div><p>数据表格</p>
+							</li>
+							<li>
+								<div class="portrait"></div><p>数据表格</p>
+							</li>
+							<li>
+								<div class="portrait"></div><p>数据表格</p>
+							</li>
+							<li>
+								<div class="portrait"></div><p>数据表格</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</div>
+		<script>
+			//固定header小top光标
+			headerTop()
+			// 点击菜单图标收 放左边固定栏
+			ClickOnTheMenu()
+			//左边固定下拉框
+			ContractionBar()
+			//左边固定小光标
+			leftFixedTheCursor()
+			//當屏幕大小小於992的時候，自適應
+			AdaptiveScreen()
+			//八卦新闻
+			plugIns()
+			//跳转页面
+			goToUrl("index.html")
+		</script>
+	</body>
+</html>

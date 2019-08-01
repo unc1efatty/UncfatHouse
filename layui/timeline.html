@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>时间线</title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="css/repeat.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<script src="script/jquery-1.12.4.js"></script>
+		<script src="js/repeat.js"></script>
+	</head>
+	<body>
+		<div class="fixedNav">
+			<div style="min-width:220px;">
+				<h1>layuiAdmin Pro</h1>
+				<div id="sign-F">
+					<ul class="navUl" style="width:220px;">
+						<li class="anitTwo">
+							<span class="iconfont icon-zhuye"></span>
+							<cite>主页</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li id="webpage">
+								<kite>控制台</kite>
+							</li>
+							<li>
+								<kite>主页一</kite>
+							</li>
+							<li>
+								<kite>主页二</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-quanping"></span>
+							<cite>组件</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>栅格</kite>
+							</li>
+							<li>
+								<kite>按钮</kite>
+							</li>
+							<li>
+								<kite>表单</kite>
+							</li>
+							<li>
+								<kite>导航</kite>
+							</li>
+							<li>
+								<kite>选项卡</kite>
+							</li>
+							<li>
+								<kite>进度条</kite>
+							</li>
+							<li>
+								<kite>面板</kite>
+							</li>
+							<li>
+								<kite>徽章</kite>
+							</li>
+							<li>
+								<kite>时间线</kite>
+							</li>
+							<li>
+								<kite>动画</kite>
+							</li>
+							<li>
+								<kite>辅助</kite>
+							</li>
+							<li>
+								<kite>通用弹层</kite>
+							</li>
+							<li>
+								<kite>日期时间</kite>
+							</li>
+							<li>
+								<kite>表格</kite>
+							</li>
+							<li>
+								<kite>分页</kite>
+							</li>
+							<li>
+								<kite>上传</kite>
+							</li>
+							<li>
+								<kite>颜色选择器</kite>
+							</li>
+							<li>
+								<kite>滑块组件</kite>
+							</li>
+							<li>
+								<kite>评分</kite>
+							</li>
+							<li>
+								<kite>轮播</kite>
+							</li>
+							<li>
+								<kite>流加载</kite>
+							</li>
+							<li>
+								<kite>工具</kite>
+							</li>
+							<li>
+								<kite>代码修饰</kite>
+							</li>
+							<li>
+								<kite>即使聊天</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-biaoqian"></span>
+							<cite>页面</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>个人主页</kite>
+							</li>
+							<li>
+								<kite>通讯录</kite>
+							</li>
+							<li>
+								<kite>客户列表</kite>
+							</li>
+							<li>
+								<kite>商品列表</kite>
+							</li>
+							<li>
+								<kite>留言板</kite>
+							</li>
+							<li>
+								<kite>搜索结果</kite>
+							</li>
+							<li>
+								<kite>注册</kite>
+							</li>
+							<li>
+								<kite>登入</kite>
+							</li>
+							<li>
+								<kite>忘记密码</kite>
+							</li>
+							<li>
+								<kite>404</kite>
+							</li>
+							<li>
+								<kite>错误提示</kite>
+							</li>
+							<li>
+								<kite>内嵌页面</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-wangluo"></span>
+							<cite>应用</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>内容系统</kite>
+							</li>
+							<li>
+								<kite>社区系统</kite>
+							</li>
+							<li>
+								<kite>消息中心</kite>
+							</li>
+							<li>
+								<kite>工单系统</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-zhinanzhen"></span>
+							<cite>高级</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>通讯系统</kite>
+							</li>
+							<li>
+								<kite>Echarts集成</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-survey"></span>
+							<cite>用户</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>网站用户</kite>
+							</li>
+							<li>
+								<kite>后台管理员</kite>
+							</li>
+							<li>
+								<kite>角色管理</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-shezhi"></span>
+							<cite>设置</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>系统设置</kite>
+							</li>
+							<li>
+								<kite>我的设置</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-template"></span>
+							<cite>授权</cite>
+						</li>
+						<span id="sign"></span>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+		<div class="header">
+			<ul class="header-navUl sign-A">
+				<li>
+					<i class="iconfont icon-liebiaoshouqi"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-wangluo"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-shuaxin"></i>
+				</li>
+				<li>
+					<input type="text" placeholder="搜索...">
+				</li>
+				<span class="sign-a"></span>
+			</ul>
+			<ul class="header-navUl2 sign-A">
+				<li>
+					<i class="iconfont icon-lingdang"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-747bianjiqi_tuya"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-biaoqian"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-quanping"></i>
+				</li>
+				<li style="position:relative;">
+					<cite>贤心</cite>
+					<i></i>
+				</li>
+				<li>
+					<i class="iconfont icon-moreif"></i>
+				</li>
+				<span class="sign-a"></span>
+			</ul>
+		</div>
+		
+		<div class="section">
+			<!-- 身体部分的主页header -->
+			<div class="nWeheader RptStyle repet-text">
+				<span>主页</span>
+				<span style="font-size:10px;color:rgb(153, 153, 153);">/</span>
+				<span>组件</span>
+				<span>/</span>
+				<span>徽章</span>
+			</div>
+			<!-- 内容主体区域 -->
+			<div style="padding: 15px; margin:-7.5px;">
+				<div class="layui-row layui-col-space15">
+    <div class="layui-col-md12">
+      <div class="layui-card">
+        <div class="layui-card-header">常规时间线</div>
+        <div class="layui-card-body">
+
+          <ul class="layui-timeline">
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">12月28日</h3>
+                <p>
+                  一直以来，layui 秉承无偿开源的初心，虔诚致力于服务各层次前后端 Web 开发者，在商业横飞的当今时代，这一信念从未动摇。即便身单力薄，仍然重拾决心，埋头造轮，以尽可能地填补产品本身的缺口。在过去的一段的时间，我一直在寻求持久之道，已维持你眼前所见的一切。而 layuiAdmin 是我们尝试解决的手段之一。我相信真正有爱于 layui 生态的你，定然不会错过这一拥抱吧。
+                </p>
+                <p><br>子曰：君子不用防，小人防不住。请务必通过官网正规渠道，获得 <a href="#" target="_blank">layuiAdmin</a>！</p>
+              </div>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">12月25日</h3>
+                <p>又是一年 <em>“圣诞节”</em>，2018 向我们正在走来</p>
+                <ul>
+                  <li>叮叮当，叮叮当，铃儿响叮当</li>
+                  <li>今晚滑雪多快乐，我们坐在雪橇上</li>
+                </ul>
+              </div>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">12月24日</h3>
+                <p>
+                  美丽的夜晚，都是祈祷的人们。<br>他们等待着第二天，收到圣诞老人的礼物。<br><br>
+                </p>
+                <blockquote class="layui-elem-quote">平安夜，天赐平安。愿真善美的事物都能永恒。</blockquote>
+              </div>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">过去</div>
+              </div>
+            </li>
+          </ul> 
+        
+        </div>
+      </div>
+    </div>
+    <div class="layui-col-md12">
+      <div class="layui-card">
+        <div class="layui-card-header">简约时间线</div>
+        <div class="layui-card-body">
+          
+          <ul class="layui-timeline">
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-fire"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">
+                  2018年，layui 5.0 发布，并发展成为中国最受欢迎的前端 UI 框架（期望）
+                </div>
+              </div>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2017年，layui 里程碑版本 2.0 发布</div>
+              </div>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2016年，layui 首个版本发布</div>
+              </div>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2015年，layui 孵化</div>
+              </div>
+            </li>
+            <li class="layui-timeline-item">
+              <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop layui-timeline-axis layui-icon-loading-1"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">更久前，轮子时代。维护几个独立组件：layer等</div>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+				
+		</div>
+		</div>
+		<script>
+			//固定header小top光标
+			headerTop()
+			// 点击菜单图标收 放左边固定栏
+			ClickOnTheMenu()
+			//左边固定下拉框
+			ContractionBar()
+			//左边固定小光标
+			leftFixedTheCursor()
+			//當屏幕大小小於992的時候，自適應
+			AdaptiveScreen()
+		</script>
+	</body>
+</html>

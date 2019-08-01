@@ -1,0 +1,185 @@
+
+/* 身体居中部分的左边 */
+.centered-left{
+	width:calc((100% / 3) * 2 );
+	height:auto;
+}
+.centered-left .centeredLeft-One{
+	width:100%;
+	height:400px;
+}
+.centered-left .centeredLeft-One .repet-text{
+	display: flex;
+	justify-content: space-between;
+}
+.centered-left .centeredLeft-One .repet-text span{
+	color:rgb(22, 176, 238);
+	padding:0 15px 0 0;
+	cursor:pointer;
+}
+.centered-left .centeredLeft-One .repet-style ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.centered-left .centeredLeft-One .repet-style ul li{
+	width:calc((100% / 3) - 10px);
+	height:165px;
+	background:rgb(248, 248, 248);
+	margin:0 10px 10px 0;
+}
+.centered-left .centeredLeft-One .repet-style ul li div{
+	margin:0 15px;
+	overflow: hidden;
+}
+.centered-left .centeredLeft-One .repet-style ul li div p{
+	margin-top:20px;
+	font-size:14px;
+}
+.centered-left .centeredLeft-One .repet-style ul li div p:first-child span:hover{
+	color:rgb(47, 184, 239);
+	transition:all .5s;
+	cursor:pointer;
+}
+.centered-left .centeredLeft-One .repet-style ul li div p i{
+	font-size:25px;
+	color:rgb(76, 179, 170);
+	padding:0 5px 0 0 ;
+}
+.centered-left .centeredLeft-One .repet-style ul li div p:nth-child(2){
+	font-size:14px;
+	color:rgb(123, 123, 123);
+	min-width:210px;
+}
+.centered-left .centeredLeft-One .repet-style ul li div p:last-child{
+	display: flex;
+	justify-content: space-between;
+	font-size:10px;
+}
+.centered-left .centeredLeft-One .repet-style ul li div p:last-child span:first-child{
+	color:rgb(123, 123, 123);
+}
+.centered-left .centeredLeft-One .repet-style ul li div p:last-child span:first-child:hover{
+	color:rgb(47, 184, 239);
+	transition:all .5s;
+	cursor:pointer;
+}
+.centered-left .centeredLeft-One .repet-style ul li div p:last-child span:last-child{
+	color:rgb(210, 210, 210);
+}
+/* 左边第二部分 */
+.centered-left .centeredLeft-Two{
+	width:100%;
+	height:545px;
+	margin-top:15px;
+}
+.centered-left .centeredLeft-Two .repet-style ul li{
+	width:calc(100% - 10px);
+	margin-top:15px;
+	font-size: 14px;
+	display: flex;
+	padding:0 0 20px 0;
+	border-bottom: 1px solid rgb(238, 238, 238);
+}.centered-left .centeredLeft-Two .repet-style ul li:last-child{
+	border:none;
+}
+.centered-left .centeredLeft-Two .repet-style ul li div:last-child{
+	margin-left:15px;
+}.centered-left .centeredLeft-Two .repet-style ul li div p:last-child{
+	margin-top:5px;
+}
+.centered-left .centeredLeft-Two .repet-style ul li div p a{
+	color:rgb(37, 182, 239);
+}
+.centered-left .centeredLeft-Two .repet-style ul li div p:last-child{
+	color:rgb(187, 187, 187);
+}
+.portrait{
+	display: inline-block;
+	width:32px;
+	height:32px;
+	border-radius:50%;
+	background:rgb(0, 150, 136);
+	cursor:pointer;
+}
+.portrait p{
+	cursor:pointer;
+}
+
+/* 身体居中部分的右边 */
+.centered-right{
+	width:calc((100% / 3) - 15px);
+	margin-left:15px;
+}
+.centered-right .centeredRight-One{
+	width:100%;
+	height:135px;
+}
+.centered-right .centeredRight-One div ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.centered-right .centeredRight-One div ul li{
+	width:calc(100% / 4);
+	height:24px;
+	font-size:14px;
+	margin:0 0 15px 0;
+}
+.centered-right .centeredRight-One div ul li span{
+	cursor: pointer;
+}
+.centered-right .centeredRight-One div ul li span:hover{
+	color:rgb(47, 184, 239);
+	transition:all .5s;
+}
+.centered-right .centeredRight-One div ul li:last-child div{
+	width:70%;
+	border:1px solid rgb(208, 208, 208);
+	cursor: pointer;
+	min-width: 50px;
+}
+
+.Llast-li div span{
+	font-size:20px;
+	font-weight: 600;
+	padding:0 3px;
+}
+.centered-right .centeredRight-One div ul li:last-child div:hover{
+	color:rgb(47, 184, 239);
+	transition:all .5s;
+	border:1px solid rgb(47, 184, 239);
+}
+
+
+/* 第二部分 */
+.centered-right .centeredRight-Two{
+	width:100%;
+	height:395px;
+	margin-top:15px;
+}
+
+
+
+
+/* 第三部分 */
+.centered-right .centeredRight-Three{
+	width:100%;
+	height:195px;
+	margin-top:15px;
+}
+.centered-right .centeredRight-Three div ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.centered-right .centeredRight-Three div ul li .portrait{
+	width:24px;
+	height:24px;
+}
+.centered-right .centeredRight-Three div ul li{
+	display: flex;
+	align-items: center;
+	width:calc((100% / 2));
+	margin:15px 0 0 0 ;
+}
+.centered-right .centeredRight-Three div ul li p{
+	margin-left:10px;
+}

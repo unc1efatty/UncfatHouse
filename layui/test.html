@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="script/jquery-1.12.4.js"></script>
+		<style>
+			.btn1{
+				width:150px;
+				height:100px;
+				background:red;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="btn1" id="myCanvas">
+		<center>居中</center>
+		</div>
+		<script type="text/javascript">
+			$(".btn1").click(function(){
+			  $("p").slideUp();
+			});
+			
+			var c=document.getElementById("myCanvas");
+				var ctx=c.getContext("2d");
+				ctx.rect(20,20,150,100);
+				ctx.fillStyle="red";
+				ctx.fill();
+		</script>
+	</body>
+</html>

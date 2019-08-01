@@ -1,0 +1,255 @@
+
+/* 主体信息左边部分 */
+.secCore-left{
+	width:calc((100% / 3) * 2 - 15px);
+	height:1253px;
+}
+.secCore-right{
+	width:calc((100% / 3));
+	height:100%;
+	margin-left:15px;
+}
+.coreLeft-top{
+	display: flex;
+	flex-wrap: wrap;
+}
+.cLeftTop-left{
+	width:calc((100% / 2) - 15px);
+	height:245px;
+	background:yellow;
+}
+.cLeftTop-right{
+	width:calc((100% / 2));
+	height:245px;
+	background:yellow;
+	margin-left:15px;
+	position:relative;
+	overflow: hidden;
+}
+.coreLeft-center{
+	width:100%;
+	height:395px;
+	background:olive;
+	margin-top:15px;
+}
+.coreLeft-bottom{
+	width:100%;
+	height:540px;
+	background:aqua;
+	margin-top:15px;
+}
+
+/* 主体信息左边内容 */
+.cLeftTop-left{
+	position:relative; overflow: hidden;
+}
+.cLeftTop-left ul li{
+	width:100%;
+	text-align: center;
+	margin:0 10px 13px 0 ;
+	min-width:43px;
+}
+.cLeftTop-left ul li div:hover{
+	background:rgb(242, 242, 242);
+}
+.cLeftTop-left ul li p{
+	padding:3px 0 0 0;
+	font-size: 14px;
+}
+.cLeftTop-left ul li div{
+	width:100%;
+	height:60px;
+	background:rgb(248, 248, 248);
+	cursor: pointer;
+	transition:all 0.5s;
+
+}
+
+.cLeftTop-left ul li div i{
+	font-size:30px;
+	line-height: 60px; 
+}
+.cltleft-Ul{
+	display: flex;
+}
+/* 主体信息左边内容 2*/
+.cLeftTop-right .cRightTwo-mid ul{
+	margin:10px 0 0 0 ;
+}
+.cLeftTop-right .cRightTwo-mid ul li{
+	width:100%;
+	height:80px;
+	background:rgb(248, 248, 248);
+	margin:0px 10px 0 0;
+	transition:all .5s;
+	cursor:pointer;
+}
+.cLeftTop-right .cRightTwo-mid ul li:hover{
+	background:rgb(242, 242, 242);
+}
+.cLeftTop-right .cRightTwo-mid ul li p{
+	padding:10px 0 0 15px;
+}
+.cLeftTop-right .cRightTwo-mid ul li p:first-child{
+	color:rgb(154, 154, 154);
+}
+.cLeftTop-right .cRightTwo-mid ul li p:last-child{
+	color:rgb(0, 150, 136);
+	font-size:30px;
+}
+/* 左边主体信息coreLeft-center */
+.coreLeft-center .cRightTwo-mid div:first-child{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	color:rgb(115, 115, 115);
+}
+/* 主体信息右边部分 */
+.coreRight-One{
+	width:100%;
+	padding: 0 0 1px 0;
+	/* height:245px; */
+}
+.coreRight-Two{
+	width:100%;
+	height:190px;
+	margin-top:15px;
+}
+.coreRight-Three{
+	width:100%;
+	height:145px;
+	background:coral;
+	margin-top:15px;
+}
+.coreRight-Fore{
+	width:100%;
+	height:auto;
+	background:beige;
+	margin-top:15px;
+}
+.cRightOne-table tbody tr td a{
+	padding:0 0 0 15px;
+	color:rgb(48, 186, 240);
+}
+.cRightOne-table tbody tr td a:hover{
+	text-decoration:underline;
+}
+.cRightOne-table tbody tr:hover{
+	background:rgb(242, 242, 242);
+	transition:all .5s;
+}
+
+/* 主体信息右边内容 */
+/* 表格 */
+.cRightOne-table{
+	border-collapse:collapse;
+	width:calc(100% - 30px);
+	height:auto;
+	margin:15px;
+	clear: both;
+}
+.cRightOne-table tr{
+	height:39px;
+}
+.cRightOne-table, td{
+  border: 1px solid rgb(230, 230, 230);
+  padding:0 0 0 10px;
+}
+.sometd{
+/* 	display: flex;
+	flex-direction: row; */
+	border:none;
+}
+.sometd span{
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	width:90px;
+	height:35px;
+	color:white;
+	font-weight: 600;
+	margin:10px 5px;
+	cursor:pointer;
+	transition:all .5s;
+
+}
+.sometd span:first-child{
+	background:rgb(255, 87, 34);
+}
+.sometd span:first-child:hover{
+	background:rgb(249, 117, 75);
+}
+.sometd span:last-child{
+	background:rgb(0, 150, 136);
+}
+.sometd span:last-child:hover{
+	background:rgb(46, 162, 152);
+}
+
+.cRightTmid-un{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0 0 5px 0;
+}
+.cRightTmid-un span:first-child{
+	font-size: 25px;
+}
+.cRightTmid-un span:last-child{
+	color:rgb(158, 158, 158);
+}
+.cRightTmid-strip{
+	width:100%;
+	height:6px;
+	border-radius:3px;
+	background:rgb(226, 226, 226);
+	position:relative;
+	margin:0 0 20px 0;
+}
+.crTmid-strip{
+	width:65%;
+	height:6px;
+	position:absolute;
+	left:0;
+	background:rgb(95, 184, 120);
+	border-radius: 3px;
+}
+/* 右边three */
+.Radio-Bt{
+	width:calc(100% - 30px);
+	height:calc(100% - 40px - 30px);
+	background:rgb(255, 87, 34);
+	margin:15px;
+	color:white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* 右边Fore */
+.coreRight-Fore div i{
+	margin:0 15px 0 0;
+}
+.coreRight-Fore div p{
+	text-indent:25px;
+	padding:0 0 15px 0;
+}
+
+/* 按钮重复 */
+.circle{
+	display: flex;
+	flex-wrap: nowrap;
+	margin:0 15px 0 0;
+}
+.circle-a{
+	width:10px;
+	height:10px;
+	border-radius: 6px;
+	background:rgb(226, 226, 226);
+	margin:0 5px 0 0;
+	cursor: pointer;
+}
+.circle-Fz{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

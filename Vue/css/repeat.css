@@ -1,0 +1,538 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    color: #304455;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+a,
+ul li{
+    list-style: none;
+    color: #304455;
+
+    text-decoration: none;
+}
+/* sm固定头部 */
+.header-sm{
+    display: none;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:40px;
+    background:white;
+    border:1px solid rgb(229, 229, 229);
+    z-index: 999;
+}
+.header-sm .menu-button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 12px;
+    background: url(../images/menu.png) center center no-repeat;
+    background-size: 24px;
+}
+.header-sm .logo {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../images/logo.png) center center no-repeat;
+    top: 5px;
+    left: 50%;
+    margin-left: -15px;
+    background-size: 30px;
+}
+/* 固定头部 */
+.header{
+    background:white;
+    position:fixed;
+    top: 0;
+    width:100%;
+    height:60px;
+    border-bottom:1px solid rgb(228, 228, 228);
+    box-shadow: 1px 1px 2px rgb(244, 244, 244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+.header ul{
+    display: flex;
+    margin:0 30px 0 0;
+    align-items: center;
+    min-width: 736px;
+}
+.header ul li{
+    padding:0px 12px;
+}
+.header ul li span:first-child{
+    cursor:pointer;
+    padding:0 0 3px 0;
+}
+/* .header ul li span:first-child:hover{
+    border-bottom: 3px solid #42b983;
+} */
+.header ul li:nth-child(4) span:hover{
+    border-bottom: 3px solid #42b983;
+}
+.header ul li:last-child span:hover{
+    border-bottom: 3px solid #42b983;
+}
+.header ul li input{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px 0 30px;
+    border: 1px solid #e3e3e3;
+    color: #273849;
+    outline: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    background:url(../images/search.png) 8px 5px no-repeat;
+    background-size: 20px;
+}
+.header ul li input:focus{
+    transition:all .2s;
+    border-color:rgb(95, 195, 150);
+}
+.header >a{
+    margin-left:55px;
+    min-width: 112px;
+}
+.header a img{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+.header a span{
+    font-size:25px;
+    margin-left:7px;
+}
+/* 固定头部的移入弹框 */
+.header ul .pop{
+    position:relative;
+    padding:15px 12px;
+}
+/* .pop >span:hover + .pop-son{ 
+    display: block;
+} */
+.pop-son{
+    display: none;
+    left:-115px;
+    top:45px;
+    position:absolute;
+    width:170px;
+    background:white;
+    border-radius: 5px;
+    border:1px solid rgb(223, 223, 223);
+}
+.pop-son ol{
+    margin-top:15px;
+}
+.pop-son ol li{
+    margin:0 0 8px 0;
+    padding-left:20px;
+}
+.pop-son ol li:last-child{
+    padding-bottom:5px;
+}
+.pop-son ol li:hover a{
+    color:rgb(66, 185, 131);
+}
+.pop-son ol li:nth-child(2){
+    position:relative;
+}
+
+.pop-son ol li:nth-child(2) i{
+    content:"";
+    position:absolute;
+    top:7px;
+    left:7px;
+    border-top:4px solid transparent;
+    border-bottom:4px solid transparent;
+    border-left:4px solid rgb(66, 185, 131);
+}
+
+.pop-son ol div{
+    width:100%;
+    height:1px;
+    /* border-bottom:1px solid rgb(238, 238, 238); */
+    background:rgb(238, 238, 238);
+}
+.pop-son ol div + li{
+    margin-top:9px;
+}
+
+
+/* .pop-son ol{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* 下标箭头 */
+.arrow{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -1px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #4f5959;
+}
+
+/* 全部overall-body */
+.overall-body{
+    padding-top:60px;
+}
+/* 侧边栏 */
+.sidebar{
+    position:fixed;
+    left:0;
+    width:290px;
+    overflow-y: auto;
+    height:calc(100% - 61px);
+    background:white;
+    z-index: 998;
+}
+.sidebar-con{
+    width:calc(100% - 20px);
+    padding:70px 0 0 20px;
+}
+.sidebar-con p{
+    font-size:13px;
+    margin-top:-10px;
+    padding:0 0 20px 0;
+}
+.sidebar-con img{
+    width:200px;
+    padding:0 0 15px 0;
+}
+.sidebar-con img h2 select{
+padding:0 0 0 2px;
+}
+/* menu-root */
+.menu-root{
+    margin-top:15px;
+}
+.menu-root li h3{
+    margin:25px 0 25px 0;
+}
+.menu-root li{
+   margin:15px 0 15px 0;
+}
+.menu-root li ul{
+    margin-left:20px;
+}
+.sidebar .sidebar-link:hover {
+    border-bottom: 2px solid #42b983;
+}
+
+/* 内容重复使用 */
+.OverB-content h1{
+    padding:0 0 35px 0;
+}
+.OverB-content img{
+    width:100%;
+}
+.OBcont-adv{
+    background:rgb(248, 248, 248);
+    height:39px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    clear: both;
+}
+.OBcont-adv::before{
+    content: "广告";
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: #aaa;
+    padding: 3px 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: -9px;
+    right: 10px;
+}
+.OBcont-adv span{
+    margin:0 0 0 15px;
+}
+.OBcont-adv span:first-child{
+    font-size:18px;
+    font-weight: 600;
+    color:rgb(28, 144, 243);
+}
+.OBcont-adv span:nth-child(2){
+    font-size: 14px;
+}
+.OBcont-adv span:last-child{
+    font-size:12px;
+    border:1px solid rgb(136, 136, 136);
+    padding:2px 5px;
+    border-radius: 3px;
+}
+/* a标签 */
+.OverB-content a{
+    color: #42b983;
+    font-weight: 600;
+
+}
+.OverB-content h3{
+    margin-top:50px;
+    position:relative;
+}
+.OverB-content h3::before{
+    content: "#";
+    color: #42b983;
+    position: absolute;
+    left: -0.7em;
+    margin-top: -0.05em;
+    padding-right: 0.5em;
+    font-size: 1.2em;
+    line-height: 1;
+    font-weight: bold;
+}
+.OverB-content p{
+    margin-top:25px;
+    line-height: 1.6em;
+}
+.OverB-content h2 {
+    margin: 45px 0 0.8em;
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #ddd;
+}
+code {
+    color: #d63200;
+    padding: 3px 5px;
+    margin: 0 2px;
+    border-radius: 2px;
+    white-space: nowrap;
+    background: #f8f8f8;
+}
+.OverB-content p.tip{
+    padding: 12px 24px 12px 30px;
+    margin: 2em 0;
+    border-left:4px solid #f66;
+    background-color: #f8f8f8;
+    position: relative;
+}
+.OverB-content p.tip:before{
+    content: '!';
+    position: absolute;
+    top: 14px;
+    left: -12px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    background:rgb(255, 102, 102);
+}
+.OverB-content a.button {
+    font-size: 0.9em;
+    color: #fff;
+    margin: 0.2em 0;
+    width: 200px;
+    text-align: center;
+    padding: 12px 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+a.button{
+    padding: 0.75em 2em;
+    border-radius: 2em;
+    display: inline-block;
+    color: #fff;
+    background-color: #4fc08d;
+    transition: all 0.15s ease;
+    box-sizing: border-box;
+    border: 1px solid #4fc08d;
+}
+.OverB-content span.info {
+    font-size: 0.85em;
+    display: inline-block;
+    vertical-align: middle;
+    width: 280px;
+    margin-left: 20px;
+}
+pre {
+    font-size: 0.85rem;
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    position: relative;
+    margin:15px 0;
+}
+pre code {
+    overflow-x: auto;
+    color: #525252;
+    white-space: pre;
+    padding: 1.2em 1.4em;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    display: block;
+}
+pre code.hljs.html::before {
+    content: "HTML";
+}
+pre code.hljs.html::before, pre code.hljs.js::before, pre code.hljs.bash::before, pre code.hljs.css::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ccc;
+    text-align: right;
+    font-size: 0.9em;
+    padding: 5px 10px 0;
+    line-height: 15px;
+    height: 15px;
+    font-weight: 600;
+}
+pre code .hljs-tag, pre code .hljs-tag pre code .hljs-title, pre code .hljs-change, pre code .hljs-winutils, pre code .hljs-flow, pre code .hljs-tex pre code .hljs-special {
+    color: #2973b7;
+}
+pre code .hljs-symbol, pre code .hljs-symbol pre code .hljs-string, pre code .hljs-value, pre code .hljs-regexp, pre code .hljs-string, pre code .hljs-subst, pre code .hljs-haskell pre code .hljs-type, pre code .hljs-preprocessor, pre code .hljs-ruby pre code .hljs-class pre code .hljs-parent, pre code .hljs-built_in, pre code .hljs-sql pre code .hljs-aggregate, pre code .hljs-django pre code .hljs-template_tag, pre code .hljs-django pre code .hljs-variable, pre code .hljs-smalltalk pre code .hljs-class, pre code .hljs-javadoc, pre code .hljs-django pre code .hljs-filter pre code .hljs-argument, pre code .hljs-smalltalk pre code .hljs-localvars, pre code .hljs-smalltalk pre code .hljs-array, pre code .hljs-attr_selector, pre code .hljs-pseudo, pre code .hljs-addition, pre code .hljs-stream, pre code .hljs-envvar, pre code .hljs-apache pre code .hljs-tag, pre code .hljs-apache pre code .hljs-cbracket, pre code .hljs-tex pre code .hljs-command, pre code .hljs-prompt {
+    color: #42b983;
+}
+pre code .hljs-keyword, pre code .hljs-attribute {
+    color: #d63200;
+}
+pre code.hljs.bash::before {
+    content: "Shell";
+}
+
+.OverB-content > table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 1.2em auto;
+    padding: 0;
+    display: block;
+    overflow-x: auto;
+}
+.OverB-content > table th, .OverB-content > table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+.OverB-content > table td, .OverB-content > table th {
+    line-height: 1.5em;
+    padding: 0.4em 0.8em;
+    border: none;
+    border: 1px solid #ddd;
+}
+.OverB-content ul, .OverB-content ol {
+    padding-left: 1.5em;
+    position: inherit;
+}
+.OverB-content p, .OverB-content ul, .OverB-content ol {
+    line-height: 1.6em;
+    margin: 1.2em 0 -1.2em;
+    padding-bottom: 1.2em;
+    position: relative;
+    z-index: 1;
+}
+.OverB-content h4{
+    padding:20px 0;
+}
+.guide-links {
+    margin-top: 2em;
+    height: 1em;
+}
+.footer {
+    color: #4f5959;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #e5e5e5;
+}
+/* center内容 */
+.OverB-content{
+    max-width:700px;
+    height:calc(100% - 60px);
+    margin:0 auto;
+    padding: 2.2em 0;
+    padding-left: 50px;
+    position: relative;
+}
+
+/* 广告 */
+#ad{
+    width: 150px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 13px;
+}
+#ad a img{
+    width:100%;
+}
+/* 介绍重复 */
+.scrimba, .vueschool {
+    background-color: #e7ecf3;
+    padding: 1em 1.25em;
+    border-radius: 2px;
+    color: #486491;
+    position: relative;
+}
+.scrimba a:before, .vueschool a:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: -4px;
+    border-radius: 50%;
+    background-color: #73abfe;
+}
+.scrimba a:after, .vueschool a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 5px;
+    left: 8px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #fff;
+}
+.scrimba a, .vueschool a {
+    color: #486491 !important;
+    position: relative;
+    padding-left: 36px;
+}
+/* 白色背景文字居中边框1px */
+#demo, .demo, .content .demo {
+    border: 1px solid #eee;
+    border-radius: 2px;
+    padding: 25px 35px;
+    margin-top: 1em;
+    margin-bottom: 40px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-x: auto;
+}
+/* 一个befo:JS */
+pre code.hljs.js::before {
+    content: "JS";
+}   
+.OverB-content blockquote {
+    margin: 2em 0;
+    padding-left: 20px;
+    border-left: 4px solid #42b983;
+}
+.demo-alert-box {
+    padding: 10px 20px;
+    background: #f3beb8;
+    border: 1px solid #f09898;
+}
+.menu-root2{
+    display: none;
+}   

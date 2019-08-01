@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>按钮</title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" href="css/repeat.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<script src="script/jquery-1.12.4.js"></script>
+		<script src="js/repeat.js"></script>
+	</head>
+	<body>
+		<div class="fixedNav">
+			<div style="min-width:220px;">
+				<h1>layuiAdmin Pro</h1>
+				<div id="sign-F">
+					<ul class="navUl" style="width:220px;">
+						<li class="anitTwo">
+							<span class="iconfont icon-zhuye"></span>
+							<cite>主页</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li id="webpage">
+								<kite>控制台</kite>
+							</li>
+							<li>
+								<kite>主页一</kite>
+							</li>
+							<li>
+								<kite>主页二</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-quanping"></span>
+							<cite>组件</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>栅格</kite>
+							</li>
+							<li>
+								<kite>按钮</kite>
+							</li>
+							<li>
+								<kite>表单</kite>
+							</li>
+							<li>
+								<kite>导航</kite>
+							</li>
+							<li>
+								<kite>选项卡</kite>
+							</li>
+							<li>
+								<kite>进度条</kite>
+							</li>
+							<li>
+								<kite>面板</kite>
+							</li>
+							<li>
+								<kite>徽章</kite>
+							</li>
+							<li>
+								<kite>时间线</kite>
+							</li>
+							<li>
+								<kite>动画</kite>
+							</li>
+							<li>
+								<kite>辅助</kite>
+							</li>
+							<li>
+								<kite>通用弹层</kite>
+							</li>
+							<li>
+								<kite>日期时间</kite>
+							</li>
+							<li>
+								<kite>表格</kite>
+							</li>
+							<li>
+								<kite>分页</kite>
+							</li>
+							<li>
+								<kite>上传</kite>
+							</li>
+							<li>
+								<kite>颜色选择器</kite>
+							</li>
+							<li>
+								<kite>滑块组件</kite>
+							</li>
+							<li>
+								<kite>评分</kite>
+							</li>
+							<li>
+								<kite>轮播</kite>
+							</li>
+							<li>
+								<kite>流加载</kite>
+							</li>
+							<li>
+								<kite>工具</kite>
+							</li>
+							<li>
+								<kite>代码修饰</kite>
+							</li>
+							<li>
+								<kite>即使聊天</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-biaoqian"></span>
+							<cite>页面</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>个人主页</kite>
+							</li>
+							<li>
+								<kite>通讯录</kite>
+							</li>
+							<li>
+								<kite>客户列表</kite>
+							</li>
+							<li>
+								<kite>商品列表</kite>
+							</li>
+							<li>
+								<kite>留言板</kite>
+							</li>
+							<li>
+								<kite>搜索结果</kite>
+							</li>
+							<li>
+								<kite>注册</kite>
+							</li>
+							<li>
+								<kite>登入</kite>
+							</li>
+							<li>
+								<kite>忘记密码</kite>
+							</li>
+							<li>
+								<kite>404</kite>
+							</li>
+							<li>
+								<kite>错误提示</kite>
+							</li>
+							<li>
+								<kite>内嵌页面</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-wangluo"></span>
+							<cite>应用</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>内容系统</kite>
+							</li>
+							<li>
+								<kite>社区系统</kite>
+							</li>
+							<li>
+								<kite>消息中心</kite>
+							</li>
+							<li>
+								<kite>工单系统</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-zhinanzhen"></span>
+							<cite>高级</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>通讯系统</kite>
+							</li>
+							<li>
+								<kite>Echarts集成</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-survey"></span>
+							<cite>用户</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>网站用户</kite>
+							</li>
+							<li>
+								<kite>后台管理员</kite>
+							</li>
+							<li>
+								<kite>角色管理</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-shezhi"></span>
+							<cite>设置</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>系统设置</kite>
+							</li>
+							<li>
+								<kite>我的设置</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-template"></span>
+							<cite>授权</cite>
+						</li>
+						<span id="sign"></span>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="header">
+			<ul class="header-navUl sign-A">
+				<li>
+					<i class="iconfont icon-liebiaoshouqi"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-wangluo"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-shuaxin"></i>
+				</li>
+				<li>
+					<input type="text" placeholder="搜索...">
+				</li>
+				<span class="sign-a"></span>
+			</ul>
+			<ul class="header-navUl2 sign-A">
+				<li>
+					<i class="iconfont icon-lingdang"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-747bianjiqi_tuya"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-biaoqian"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-quanping"></i>
+				</li>
+				<li style="position:relative;">
+					<cite>贤心</cite>
+					<i></i>
+				</li>
+				<li>
+					<i class="iconfont icon-moreif"></i>
+				</li>
+				<span class="sign-a"></span>
+			</ul>
+		</div>
+
+		<div class="section">
+			<!-- 身体部分的主页header -->
+			<div class="nWeheader RptStyle repet-text">
+				<span>主页</span>
+				<span style="font-size:10px;color:rgb(153, 153, 153);">/</span>
+				<span>组建</span>
+				<span>/</span>
+				<span>按钮</span>
+			</div>
+			<!-- 内容主体区域 -->
+			<div style="padding: 15px; margin:-7.5px;">
+				<div class="layui-row layui-col-space15">
+					<div class="layui-col-md6">
+						<div class="layui-card">
+							<div class="layui-card-header">按钮主题</div>
+							<div class="layui-card-body">
+								<div class="layui-btn-container">
+									<button class="layui-btn layui-btn-primary">原始按钮</button>
+									<button class="layui-btn">默认按钮</button>
+									<button class="layui-btn layui-btn-normal">百搭按钮</button>
+									<button class="layui-btn layui-btn-warm">暖色按钮</button>
+									<button class="layui-btn layui-btn-danger">警告按钮</button>
+									<button class="layui-btn layui-btn-disabled">禁用按钮</button>
+								</div>
+							</div>
+						</div>
+						<div class="layui-card">
+							<div class="layui-card-header">按钮尺寸</div>
+							<div class="layui-card-body">
+								<div class="layui-btn-container">
+									<button class="layui-btn layui-btn-primary layui-btn-lg">大型按钮</button>
+									<button class="layui-btn layui-btn-primary">默认按钮</button>
+									<button class="layui-btn layui-btn-primary layui-btn-sm">小型按钮</button>
+									<button class="layui-btn layui-btn-primary layui-btn-xs">迷你按钮</button>
+
+									<br>
+
+									<button class="layui-btn layui-btn-lg">大型按钮</button>
+									<button class="layui-btn">默认按钮</button>
+									<button class="layui-btn layui-btn-sm">小型按钮</button>
+									<button class="layui-btn layui-btn-xs">迷你按钮</button>
+
+									<br>
+
+									<button class="layui-btn layui-btn-lg layui-btn-normal">大型按钮</button>
+									<button class="layui-btn layui-btn-normal">默认按钮</button>
+									<button class="layui-btn layui-btn-sm layui-btn-normal">小型按钮</button>
+									<button class="layui-btn layui-btn-xs layui-btn-normal">迷你按钮</button>
+								</div>
+							</div>
+						</div>
+						<div class="layui-card">
+							<div class="layui-card-header">按钮图标</div>
+							<div class="layui-card-body">
+								<div class="layui-btn-container">
+									<button class="layui-btn"><i class="layui-icon layui-icon-star"></i></button>
+									<button class="layui-btn"><i class="layui-icon layui-icon-left"></i></button>
+									<button class="layui-btn"><i class="layui-icon layui-icon-right"></i></button>
+									<button class="layui-btn"><i class="layui-icon layui-icon-edit"></i></button>
+									<button class="layui-btn"><i class="layui-icon layui-icon-delete"></i></button>
+									<button class="layui-btn"><i class="layui-icon layui-icon-share"></i></button>
+
+									<br>
+
+									<button class="layui-btn layui-btn-danger"><i class="layui-icon layui-icon-star"></i></button>
+									<button class="layui-btn layui-btn-danger"><i class="layui-icon layui-icon-left"></i></button>
+									<button class="layui-btn layui-btn-danger"><i class="layui-icon layui-icon-right"></i></button>
+									<button class="layui-btn layui-btn-danger"><i class="layui-icon layui-icon-edit"></i></button>
+									<button class="layui-btn layui-btn-danger"><i class="layui-icon layui-icon-delete"></i></button>
+									<button class="layui-btn layui-btn-danger"><i class="layui-icon layui-icon-share"></i></button>
+
+									<br>
+
+									<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon-star"></i></button>
+									<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon-left"></i></button>
+									<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon-right"></i></button>
+									<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon-edit"></i></button>
+									<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon-delete"></i></button>
+									<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon-share"></i></button>
+
+									<br>
+
+									<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-star"></i></button>
+									<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-left"></i></button>
+									<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-right"></i></button>
+									<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-edit"></i></button>
+									<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-delete"></i></button>
+									<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-share"></i></button>
+
+									<br>
+
+									<button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon layui-icon-star"></i></button>
+									<button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon layui-icon-left"></i></button>
+									<button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon layui-icon-right"></i></button>
+									<button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon layui-icon-edit"></i></button>
+									<button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon layui-icon-delete"></i></button>
+									<button class="layui-btn layui-btn-normal layui-btn-sm"><i class="layui-icon layui-icon-share"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-md6">
+						<div class="layui-card">
+							<div class="layui-card-header">按钮圆角</div>
+							<div class="layui-card-body">
+								<div class="layui-btn-container">
+									<button class="layui-btn layui-btn-primary layui-btn-radius">原始按钮</button>
+									<button class="layui-btn layui-btn-radius">默认按钮</button>
+									<button class="layui-btn layui-btn-normal layui-btn-radius">百搭按钮</button>
+									<button class="layui-btn layui-btn-warm layui-btn-radius">暖色按钮</button>
+									<button class="layui-btn layui-btn-danger layui-btn-radius">警告按钮</button>
+									<button class="layui-btn layui-btn-disabled layui-btn-radius">禁用按钮</button>
+								</div>
+							</div>
+						</div>
+						<div class="layui-card">
+							<div class="layui-card-header">按钮混搭</div>
+							<div class="layui-card-body">
+								<div class="layui-btn-container">
+									<button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">大型加圆角</button>
+									<a href="#" class="layui-btn" target="_blank">跳转的按钮</a>
+									<button class="layui-btn layui-btn-sm layui-btn-normal"><i class="layui-icon layui-icon layui-icon-delete"></i> 删除</button>
+									<button class="layui-btn layui-btn-xs layui-btn-disabled"><i class="layui-icon layui-icon-share"></i> 分享</button>
+
+								</div>
+							</div>
+						</div>
+						<div class="layui-card">
+							<div class="layui-card-header">按钮组合</div>
+							<div class="layui-card-body">
+								<div class="layui-btn-container">
+									<div class="layui-btn-group">
+										<button class="layui-btn">增加</button>
+										<button class="layui-btn ">编辑</button>
+										<button class="layui-btn">删除</button>
+									</div>
+								</div>
+								<div class="layui-btn-container">
+									<div class="layui-btn-group">
+										<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-add-1"></i></button>
+										<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-edit"></i></button>
+										<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon layui-icon-delete"></i></button>
+										<button class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-right"></i></button>
+									</div>
+									<div class="layui-btn-group">
+										<button class="layui-btn layui-btn-primary layui-btn-sm">文字</button>
+										<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon-add-1"></i></button>
+										<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon-edit"></i></button>
+										<button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon layui-icon layui-icon-delete"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-card">
+							<div class="layui-card-header">按钮铺满</div>
+							<div class="layui-card-body">
+								<div class="layui-btn-container">
+									<button class="layui-btn layui-btn-fluid">好雨知时节</button>
+									<button class="layui-btn layui-btn-fluid">当春乃发生</button>
+									<button class="layui-btn layui-btn-fluid">随风潜入夜</button>
+									<button class="layui-btn layui-btn-fluid">润物细无声</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script>
+			//固定header小top光标
+			headerTop()
+			// 点击菜单图标收 放左边固定栏
+			ClickOnTheMenu()
+			//左边固定下拉框
+			ContractionBar()
+			//左边固定小光标
+			leftFixedTheCursor()
+			//當屏幕大小小於992的時候，自適應
+			AdaptiveScreen()
+			//八卦新闻
+			plugIns()
+		</script>
+	</body>
+</html>

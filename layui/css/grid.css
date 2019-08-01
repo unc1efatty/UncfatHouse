@@ -1,0 +1,15 @@
+.section .section-core {
+	display: block;
+}
+
+.section .section-core ul{
+	display: flex;
+	flex-wrap:wrap;
+	margin:0 0 0 10px;
+}
+.section .section-core ul li{
+	width:calc((100% / 6) - 10px);
+	height:265px;
+	background:white;
+	margin:10px 10px 0 0;
+}

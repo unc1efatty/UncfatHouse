@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>layuiAdmin pro - 通用后台管理模板系统(单页面专业版)</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/repeat.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<script src="script/jquery-1.12.4.js"></script>
+		<script src="js/echarts.js"></script>
+		<script src="js/repeat.js"></script>
+		<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+	</head>
+	<body>
+		<div class="fixedNav">
+			<div style="min-width:220px;">
+				<h1>layuiAdmin Pro</h1>
+				<div id="sign-F">
+					<ul class="navUl" style="width:220px;">
+						<li class="anitTwo">
+							<span class="iconfont icon-zhuye"></span>
+							<cite style="color:red;">主页</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li id="index" name="index">
+								<kite>控制台</kite>
+							</li>
+							<li id="homepage" name="homepage">
+								<kite style="color:red;">主页一</kite>
+							</li>
+							<li style="color:red;" id="homepageTwo" name="homepageTwo">
+								<kite>主页二</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-quanping"></span>
+							<cite style="color:red;">组件</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>栅格</kite>
+							</li>
+							<a href="button.html">
+								<li style="color:red;">
+									<kite>按钮</kite>
+								</li>
+							</a>
+							<li>
+								<kite>表单</kite>
+							</li>
+							<li>
+								<kite>导航</kite>
+							</li>
+							<li>
+								<kite>选项卡</kite>
+							</li>
+							<li>
+								<kite>进度条</kite>
+							</li>
+							<li>
+								<kite>面板</kite>
+							</li>
+							<a href="emblem.html">
+								<li style="color:red;">
+									<kite>徽章</kite>
+								</li>
+							</a>
+							<a href="timeline.html">
+								<li style="color:red;">
+									<kite>时间线</kite>
+								</li>
+							</a>
+							
+							<li>
+								<kite>动画</kite>
+							</li>
+							<a href="assist.html">
+							<li style="color:red;">
+								<kite>辅助</kite>
+							</li>
+							</a>
+							<li>
+								<kite>通用弹层</kite>
+							</li>
+							<li>
+								<kite>日期时间</kite>
+							</li>
+							<li>
+								<kite>表格</kite>
+							</li>
+							<li>
+								<kite>分页</kite>
+							</li>
+							<li>
+								<kite>上传</kite>
+							</li>
+							<li>
+								<kite>颜色选择器</kite>
+							</li>
+							<li>
+								<kite>滑块组件</kite>
+							</li>
+							<li>
+								<kite>评分</kite>
+							</li>
+							<li>
+								<kite>轮播</kite>
+							</li>
+							<li>
+								<kite>流加载</kite>
+							</li>
+							<li>
+								<kite>工具</kite>
+							</li>
+							<li>
+								<kite>代码修饰</kite>
+							</li>
+							<li>
+								<kite>即使聊天</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-biaoqian"></span>
+							<cite style="color:red;">页面</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<a href="personalHomepage.html">
+								<li style="color:red;">
+									<kite>个人主页</kite>
+								</li>
+							</a>
+							
+							<li>
+								<kite>通讯录</kite>
+							</li>
+							<li>
+								<kite>客户列表</kite>
+							</li>
+							<li>
+								<kite>商品列表</kite>
+							</li>
+							<li>
+								<kite>留言板</kite>
+							</li>
+							<li>
+								<kite>搜索结果</kite>
+							</li>
+							<li>
+								<kite>注册</kite>
+							</li>
+							<li>
+								<kite>登入</kite>
+							</li>
+							<li>
+								<kite>忘记密码</kite>
+							</li>
+							<li>
+								<kite>404</kite>
+							</li>
+							<li>
+								<kite>错误提示</kite>
+							</li>
+							<li>
+								<kite>内嵌页面</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-wangluo"></span>
+							<cite>应用</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>内容系统</kite>
+							</li>
+							<li>
+								<kite>社区系统</kite>
+							</li>
+							<li>
+								<kite>消息中心</kite>
+							</li>
+							<li>
+								<kite>工单系统</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-zhinanzhen"></span>
+							<cite>高级</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>通讯系统</kite>
+							</li>
+							<li>
+								<kite>Echarts集成</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-survey"></span>
+							<cite>用户</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>网站用户</kite>
+							</li>
+							<li>
+								<kite>后台管理员</kite>
+							</li>
+							<li>
+								<kite>角色管理</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-shezhi"></span>
+							<cite>设置</cite>
+							<i></i>
+						</li>
+						<ul class="anit">
+							<li>
+								<kite>系统设置</kite>
+							</li>
+							<li>
+								<kite>我的设置</kite>
+							</li>
+						</ul>
+						<li class="anitTwo">
+							<span class="iconfont icon-template"></span>
+							<cite>授权</cite>
+						</li>
+						<span id="sign"></span>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="header">
+			<ul class="header-navUl sign-A">
+				<li>
+					<i class="iconfont icon-liebiaoshouqi"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-wangluo"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-shuaxin"></i>
+				</li>
+				<li>
+					<input type="text" placeholder="搜索...">
+				</li>
+				<span class="sign-a"></span>
+			</ul>
+			<ul class="header-navUl2 sign-A">
+				<li>
+					<i class="iconfont icon-lingdang"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-747bianjiqi_tuya"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-biaoqian"></i>
+				</li>
+				<li>
+					<i class="iconfont icon-quanping"></i>
+				</li>
+				<li style="position:relative;">
+					<cite>贤心</cite>
+					<i></i>
+				</li>
+				<li>
+					<i class="iconfont icon-moreif"></i>
+				</li>
+				<span class="sign-a"></span>
+			</ul>
+		</div>
+
+		<div class="section">
+
+			<div class="section-core">
+
+				<div class="secCore-left">
+					<div class="coreLeft-top">
+						<div class="cLeftTop-left RptStyle">
+							<div class="repet-text circle-Fz">快捷方式
+								<div class="circle">
+									<div class="circle-a" id="cLeftTop-bt1" style="background:rgb(153, 153, 153);"></div>
+									<div class="circle-a" id="cLeftTop-bt2"></div>
+								</div>
+							</div>
+							<div class="cRightTwo-mid" id="cLeftTopBt2-a">
+								<ul class="cltleft-Ul">
+									<li>
+										<div><i class="iconfont icon-dashboard_line"></i></div>
+										<p>主页一</p>
+									</li>
+									<li>
+										<div><i class="iconfont icon-chart"></i></div>
+										<p>主页二</p>
+									</li>
+									<li>
+										<div><i class="iconfont icon-template"></i></div>
+										<p>弹层</p>
+									</li>
+									<li style="margin:0;">
+										<div><i class="iconfont icon-chat"></i></div>
+										<p>聊天</p>
+									</li>
+								</ul>
+
+
+								<ul class="cltleft-Ul">
+									<li>
+										<div><i class="iconfont icon-zhinanzhen"></i></div>
+										<p>进度条</p>
+									</li>
+									<li>
+										<div><i class="iconfont icon-survey"></i></div>
+										<p>工单</p>
+									</li>
+									<li>
+										<div><i class="iconfont icon-user"></i></div>
+										<p>用户</p>
+									</li>
+									<li style="margin:0;">
+										<div><i class="iconfont icon-shezhi"></i></div>
+										<p>设置</p>
+									</li>
+								</ul>
+							</div>
+							<div class="cRightTwo-mid" id="cLeftTopBt2-b" style="position:absolute; top:43px; left:100%; transition:all .2s;">
+								<ul class="cltleft-Ul">
+									<li>
+										<div><i class="iconfont icon-dashboard_line"></i></div>
+										<p>一</p>
+									</li>
+									<li>
+										<div><i class="iconfont icon-chart"></i></div>
+										<p>二</p>
+									</li>
+									<li>
+										<div><i class="iconfont icon-template"></i></div>
+										<p></p>
+									</li>
+									<li style="margin:0;">
+										<div><i class="iconfont icon-chat"></i></div>
+										<p></p>
+									</li>
+								</ul>
+								<ul class="cltleft-Ul">
+									<li>
+										<div><i class="iconfont icon-zhinanzhen"></i></div>
+										<p>条</p>
+									</li>
+									<li>
+										<div><i class="iconfont icon-survey"></i></div>
+										<p></p>
+									</li>
+									<li>
+										<div><i class="iconfont icon-user"></i></div>
+										<p></p>
+									</li>
+									<li style="margin:0;">
+										<div><i class="iconfont icon-shezhi"></i></div>
+										<p></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cLeftTop-right RptStyle">
+							<div class="repet-text circle-Fz">代办事项
+								<div class="circle">
+									<div class="circle-a" style="background:rgb(153, 153, 153);" id="cRightTopBt1"></div>
+									<div class="circle-a" id="cRightTopBt2"></div>
+								</div>
+							</div>
+							<div class="cRightTwo-mid" id="cRightTopBt2-a">
+								<ul class="cltleft-Ul">
+									<li>
+										<p>待审评论</p>
+										<p>66</p>
+									</li>
+									<li style="margin:0px ;">
+										<p>待审帖子</p>
+										<p>12</p>
+									</li>
+								</ul>
+								<ul class="cltleft-Ul">
+									<li>
+										<p>待审商品</p>
+										<p>99</p>
+									</li>
+									<li style="margin:0px;">
+										<p>代发货</p4>
+											<p>12</p>
+									</li>
+								</ul>
+							</div>
+							<div class="cRightTwo-mid" style="position:absolute; top:33px; left:100%;" id="cRightTopBt2-b">
+								<ul class="cltleft-Ul">
+									<li>
+										<p>待审评论</p>
+										<p>66</p>
+									</li>
+									<li style="margin:0px ;">
+										<p>待审帖子</p>
+										<p>12</p>
+									</li>
+								</ul>
+								<ul class="cltleft-Ul">
+									<li>
+										<p>待审商品</p>
+										<p>99</p>
+									</li>
+									<li style="margin:0px;">
+										<p>代发货</p4>
+											<p>12</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="coreLeft-center RptStyle">
+						<div class="repet-text  circle-Fz">数据概览
+							<div class="circle">
+								<div class="circle-a" style="background:rgb(153, 153, 153);"></div>
+								<div class="circle-a"></div>
+								<div class="circle-a"></div>
+							</div>
+						</div>
+						<div class="cRightTwo-mid">
+							<div>今日流量趋势</div>
+							<div id="container" style="height: 100%;"></div>
+						</div>
+					</div>
+					<div class="coreLeft-bottom RptStyle">
+						<div class="repet-text" style="display:flex;">
+							<p style="border-bottom: 1px solid rgb(95, 184, 120);">今日热搜</p>
+							<p style="padding:0 0 0 15px;">今日热帖</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="secCore-right">
+					<div class="coreRight-One RptStyle">
+						<div class="repet-text">版本信息</div>
+						<table class="cRightOne-table">
+							<tbody>
+								<tr>
+									<td>当前版本</td>
+									<td>v1.2.1 pro <a href="">更新日志</a></td>
+								</tr>
+								<tr>
+									<td>基于框架</td>
+									<td>layui-v2.4.5</td>
+								</tr>
+								<tr>
+									<td>主要特色</td>
+									<td>单页面 / 响应式 / 清爽 / 极简</td>
+								</tr>
+								<tr>
+									<td>获取渠道</td>
+									<td class="sometd">
+										<span>获取授权</span>
+										<span>立即下载</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="coreRight-Two RptStyle">
+						<div class="repet-text">效果报告</div>
+						<div class="cRightTwo-mid">
+							<div class="cRightTmid-un">
+								<span>65%</span>
+								<span>转化率(日同比28%<i></i>)</span>
+							</div>
+							<div class="cRightTmid-strip">
+								<div class="crTmid-strip"></div>
+							</div>
+							<div class="cRightTmid-un">
+								<span>32%</span>
+								<span>签到率(日同比11%<i></i>)</span>
+							</div>
+							<div class="cRightTmid-strip">
+								<div class="crTmid-strip" style="width:32%;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="coreRight-Two RptStyle">
+						<div class="repet-text">实时监控</div>
+						<div class="cRightTwo-mid">
+							<div class="cRightTmid-un">
+								<span>58%</span>
+								<span>CPU使用率</span>
+							</div>
+							<div class="cRightTmid-strip">
+								<div class="crTmid-strip"></div>
+							</div>
+							<div class="cRightTmid-un">
+								<span>90%</span>
+								<span>内存占用率</span>
+							</div>
+							<div class="cRightTmid-strip">
+								<div class="crTmid-strip" style=" background:rgb(255, 87, 34); width:90%;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="coreRight-Three RptStyle">
+						<div class="repet-text circle-Fz">
+							产品动态
+							<div class="circle">
+								<div class="circle-a" style="background:rgb(153, 153, 153);" id="coreRight-bt1"></div>
+								<div class="circle-a" id="coreRight-bt2"></div>
+								<div class="circle-a" id="coreRight-bt3"></div>
+							</div>
+						</div>
+						<div class="Radio-Bt">layuiAdmin 快速上手文档</div>
+					</div>
+
+					<div class="coreRight-Fore RptStyle">
+						<div class="repet-text circle-Fz">作者心语<i class="iconfont icon-chat" style="cursor:pointer;"></i></div>
+						<div class="cRightTwo-mid">
+							<p>一直以来，layui秉承无偿开源的初心，虔诚治理于服务各层次前后端Web开发者，在商业横飞的当今时代，这一信念从未动摇。即便身单力薄，仍然重拾决心，埋头造轮，以尽可能地填补产品本身的缺口。</p>
+							<p>在过去的一段的时间，我一直在寻求持久之道，已维持你眼前所见的一切。而layuiAdmin是我们尝试解决的手段之一。我相信真正有爱于layui生态的你，定然不会错过这一拥抱吧。</p>
+							<p>子曰：君子不用防，小人防不住。请务必通过官网正规渠道，获得<a href="" style="color:rgb(23, 177, 239);">layuiAdmin</a>!</p>
+							<p>—— 贤心(<a href="" style="color:rgb(23, 177, 239);">layui.com</a>)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// 页面跳转
+			// goToUrl("homepage.html")
+			//左边固定收缩栏
+			ContractionBar()
+			// 点击菜单图标收 放左边固定栏
+			ClickOnTheMenu()
+			// 左固浮小光标
+			leftFixedTheCursor()
+
+			//固定header小top光标
+			headerTop()
+			
+			
+			//产品动态
+			asdsa();
+			function asdsa() {
+				var rBt = $('.Radio-Bt')
+				var divBt = $('.coreRight-Three .repet-text .circle div');
+				var i2 = 1;
+				var date = {
+					0: {
+						background: 'rgb(255, 87, 34)',
+						transition: 'All .5s'
+					},
+					1: {
+						transition: 'All .5s',
+						background: 'rgb(0, 150, 136)'
+					},
+					2: {
+						transition: 'All .5s',
+						background: 'rgb(30, 159, 255)',
+					}
+				}
+
+				divBt.mouseenter(function() {
+					// console.log($(this).index())
+					var i = i2 = $(this).index();
+					$(this).css({
+						background: 'rgb(153, 153, 153)',
+					}).siblings().css('background', 'rgb(226, 226, 226)')
+
+
+					if (i == 0) {
+						rBt.css(date[i]).text('layuiAdmin快速上手文档')
+					} else if (i == 1) {
+						rBt.css(date[i]).text('layuiAdmin会员讨论专区')
+					} else {
+						rBt.css(date[i]).text('获得layui官方后台模板系统')
+					}
+				})
+
+
+				var timer = null
+				clearInterval(timer)
+
+				timer = setInterval(function() {
+					if (i2 == 3) {
+						i2 = 0
+					}
+
+					divBt.eq(i2).css({
+						background: 'rgb(153, 153, 153)',
+					}).siblings().css('background', 'rgb(226, 226, 226)');
+
+					if (i2 == 0) {
+						rBt.css(date[i2]).text('layuiAdmin快速上手文档')
+					} else if (i2 == 1) {
+						rBt.css(date[i2]).text('layuiAdmin会员讨论专区')
+					} else {
+						rBt.css(date[i2]).text('获得layui官方后台模板系统')
+					}
+					i2++;
+				}, 500)
+
+			}
+
+			// 当屏幕小于992,让它自适应屏幕
+			AdaptiveScreen()
+
+			// 快捷方式鼠标选项卡
+			function ButtonEffect(bt2, bt1, box2, box1) {
+				$(bt2).mouseenter(function() {
+					$(this).css('background', 'rgb(153, 153, 153)')
+					$(bt1).css('background', 'rgb(226, 226, 226)')
+					$(box2).css({
+						left: '0%',
+						transition: 'All .2s',
+					})
+					$(box1).css({
+						position: 'absolute',
+						left: '-100%',
+					})
+				})
+				$(bt1).mouseenter(function() {
+					$(this).css('background', 'rgb(153, 153, 153)')
+					$(bt2).css('background', 'rgb(226, 226, 226)')
+					$(box2).css({
+						left: '100%',
+					})
+					$(box1).css({
+						left: '0%',
+						transition: 'All .2s',
+					})
+				})
+			}
+			ButtonEffect('#cLeftTop-bt2', '#cLeftTop-bt1', '#cLeftTopBt2-b', '#cLeftTopBt2-a')
+			cRightTopBt2
+			ButtonEffect('#cRightTopBt2', '#cRightTopBt1', '#cRightTopBt2-b', '#cRightTopBt2-a')
+			// 图片插件
+			ImagePlugIns()
+		//  $('#webpage').on('click',function(e){
+		// 	 let _this = $(e.target)
+		// 	 var urll = $(this).attr("id");
+		// 	 console.log(urll);
+		// 	$.ajax({
+		// 		type: "GET",
+		// 		url: "data/" + urll+ ".text",
+		// 		success: function (res) {
+		// 			$(".section").html(res);
+		// 			console.log(res)
+		// 		}
+		// 	});		
+		//  })
+		 $(".navUl").click(function(e){
+			 let _this = $(e.target)
+			 if(_this.is('li[name]')){
+				var urll = _this.attr("name");
+				$.ajax({
+					type: "GET",
+					url: "data/" + urll+ ".text",
+					success: function (res) {
+						$(".section").html(res);
+					}
+				});		
+			 }
+		 })
+		</script>
+	</body>
+</html>
